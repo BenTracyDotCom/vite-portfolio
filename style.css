@@ -337,6 +337,9 @@ footerlink{
   position: relative;
   margin:0px auto;
 }
+#moreFun {
+  display: none;
+}
 
 .screwDriver,
 .wrench {
