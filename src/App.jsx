@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Clouds from './features/clouds'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -68,34 +69,7 @@ function App() {
               </svg></a>
           </div>
 
-          <svg className="clouds-container w-full h-[200px]">
-            <ellipse className="cloud" cx="20" cy="190" rx="30" ry="20" />
-            <ellipse className="cloud" cx="70" cy="190" rx="30" ry="35" />
-            <ellipse className="cloud" cx="140" cy="190" rx="50" ry="40" />
-            <ellipse className="cloud" cx="190" cy="190" rx="20" ry="30" />
-            <ellipse className="cloud" cx="230" cy="190" rx="30" ry="25" />
-            <ellipse className="cloud" cx="280" cy="190" rx="30" ry="20" />
-            <ellipse className="cloud" cx="330" cy="190" rx="30" ry="40" />
-            <ellipse className="cloud" cx="390" cy="190" rx="40" ry="30" />
-            <ellipse className="cloud" cx="445" cy="190" rx="20" ry="30" />
-            <ellipse className="cloud" cx="490" cy="190" rx="30" ry="20" />
-            <ellipse className="cloud" cx="550" cy="190" rx="40" ry="30" />
-            <ellipse className="cloud" cx="610" cy="190" rx="30" ry="20" />
-            <ellipse className="cloud" cx="660" cy="190" rx="30" ry="35" />
-            <ellipse className="cloud" cx="730" cy="190" rx="50" ry="40" />
-            <ellipse className="cloud" cx="790" cy="190" rx="20" ry="30" />
-            <ellipse className="cloud" cx="830" cy="190" rx="30" ry="25" />
-            <ellipse className="cloud" cx="880" cy="190" rx="30" ry="20" />
-            <ellipse className="cloud" cx="930" cy="190" rx="30" ry="40" />
-            <ellipse className="cloud" cx="990" cy="190" rx="40" ry="30" />
-            <ellipse className="cloud" cx="1045" cy="190" rx="20" ry="30" />
-            <ellipse className="cloud" cx="1090" cy="190" rx="30" ry="20" />
-            <ellipse className="cloud" cx="1150" cy="190" rx="40" ry="30" />
-            <ellipse className="cloud" cx="1200" cy="190" rx="30" ry="20" />
-            <ellipse className="cloud" cx="1240" cy="190" rx="20" ry="30" />
-            <ellipse className="cloud" cx="1290" cy="190" rx="40" ry="30" />
-            <ellipse className="cloud" cx="1350" cy="190" rx="30" ry="40" />
-          </svg>
+          <Clouds />
         </div>
 
       </header>
