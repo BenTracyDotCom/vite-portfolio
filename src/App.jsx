@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <input type="checkbox" name="name" id="darkModeSwitch" />
+      {/* <input type="checkbox" name="name" id="darkModeSwitch" /> */}
 
       <header>
         <div className="text">
