@@ -544,6 +544,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .border-2 {
   border-width: 2px;
 }
