@@ -1,36 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
-import Clouds from './features/clouds'
-import Heading from './features/heading'
 import useWindowDimensions from './hooks/useWindowDimensions'
-import Plane from './features/plane'
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+import Home from './screens/Home';
+import ErrorPage from './screens/Error';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+    errorElement: <ErrorPage />
+  }
+])
 
 function App() {
+
+  const [theme, setTheme] = useState('light')
+
+  useEffect(() => {
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setTheme('dark')
+      document.getElementById('themetoggle').checked = false
+    }
+  }, [])
 
   const { width } = useWindowDimensions()
   let containerWidth = `w-[${Math.floor(width) - 10}px]`
 
   return (
-    <>
-      {/* <input type="checkbox" name="name" id="darkModeSwitch" /> */}
-
-      <header>
-        <div className={`text flex flex-col justify-center w-full items-center`}>
-          <Heading />
-          <Plane />
-          <Clouds />
-        </div>
-
-      </header>
-
-      <div className="footer">
-        <a href="#">
-
-          <h1 id="moreFun">more fun stuff
-            <i className="fa fa-arrow-right" aria-hidden="true"></i></h1>
-        </a>
-      </div>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
