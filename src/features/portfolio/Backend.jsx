@@ -5,7 +5,7 @@ export default function Backend() {
 
   return (
     <div>
-      <div>Backend</div>
+      <div className="text text-xl text-center">Backend</div>
       {/* <PortfolioTile /> */}
     </div>
   )

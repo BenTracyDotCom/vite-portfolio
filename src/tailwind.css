@@ -988,10 +988,6 @@ footerlink{
 @media screen and (min-width: 550px) {
   /* TEXT */
 
-  .text {
-    padding: 0 8rem;
-  }
-
   .heading {
     font-size: 5rem;
   }

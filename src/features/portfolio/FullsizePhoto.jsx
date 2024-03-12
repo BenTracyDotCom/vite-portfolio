@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 export default function FullSizePhoto({ photo }) {
 
   return (
-    <div className="h-min border-0">
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="fullsize" className="modal">
         <div className="modal-box">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
@@ -14,7 +13,6 @@ export default function FullSizePhoto({ photo }) {
           <p className="py-4">Press ESC key or click on ✕ button to close</p>
         </div>
       </dialog>
-    </div>
 
   )
 }
