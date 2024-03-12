@@ -12,7 +12,7 @@ export default function PortfolioTile({ title, blurb, image, full, setPhoto }) {
 
   return (
     <div className="card card-compact 
-    w-fit bg-base-100 shadow-xl my-5 mx-auto">
+    w-fit bg-base-100 shadow-xl my-5 mx-auto mb-16">
       <figure className="mx-0 overflow-y-hidden">
         <img src={image} alt={`${title} image`} className="max-h-96 object-fill object-top" onClick={handleClick} />
       </figure>
