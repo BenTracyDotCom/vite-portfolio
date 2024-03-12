@@ -6,7 +6,10 @@ export default function Frontend() {
   return (
     <div>
       <div>Frontend</div>
-      <PortfolioTile />
+      <PortfolioTile 
+      image="/RR.png" 
+      title="Everglades" 
+      blurb=""/>
     </div>
   )
 }
