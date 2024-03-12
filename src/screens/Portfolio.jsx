@@ -6,13 +6,12 @@ import FullSizePhoto from "../features/portfolio/FullsizePhoto";
 export default function Portfolio() {
 
   const [photo, setPhoto] = useState('')
-  const [showPhoto, setShowPhoto] = useState(false)
 
   return (
     <div className="w-screen">
       <FullSizePhoto photo={photo} />
       <PortfolioWork setPhoto={setPhoto}/>
-      <Footer left={{text: "Home", url:"/"}} right={{text: "Game", url:"/"}} />
+      <Footer left={{text: "Home", url:"/"}} right={{text: "Game", url:"/game"}} />
     </div>
   )
 }
