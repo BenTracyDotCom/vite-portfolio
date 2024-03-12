@@ -5,8 +5,8 @@ export default function PortfolioTile({ title, blurb, image, full, setPhoto }) {
 
   full = full || image
 
-  const handleClick = (img) => {
-    setPhoto(img)
+  const handleClick = () => {
+    setPhoto(full)
     document.getElementById('fullsize').showModal()
   }
 
