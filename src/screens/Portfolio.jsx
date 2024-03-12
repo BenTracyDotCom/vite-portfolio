@@ -11,7 +11,9 @@ export default function Portfolio() {
     <div className="w-screen">
       <FullSizePhoto photo={photo} />
       <PortfolioWork setPhoto={setPhoto}/>
-      <Footer left={{text: "Home", url:"/"}} right={{text: "Game", url:"/game"}} />
+      <Footer left={{text: "Home", url:"/"}} 
+      // right={{text: "Game", url:"/game"}} 
+      />
     </div>
   )
 }

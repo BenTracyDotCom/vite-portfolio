@@ -1,7 +1,7 @@
 import React from "react";
 import PortfolioTile from "./PortfolioTile";
 
-export default function Frontend() {
+export default function Frontend({ setPhoto }) {
 
   return (
     <div>
@@ -9,7 +9,9 @@ export default function Frontend() {
       <PortfolioTile 
       image="/RR.png" 
       title="Everglades" 
-      blurb=""/>
+      blurb=""
+      setPhoto={setPhoto}
+      />
     </div>
   )
 }
