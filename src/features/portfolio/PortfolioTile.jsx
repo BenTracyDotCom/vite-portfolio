@@ -18,7 +18,7 @@ export default function PortfolioTile({ title, blurb, image, full, setPhoto }) {
       </figure>
       <div className="card-body text-center">
         <h2 className="card-title mt-0 mx-auto">{title}</h2>
-        <p>{blurb}</p>
+        <div className="max-w-96 mx-auto font-bold text-center">{blurb}</div>
       </div>
     </div>
   )
