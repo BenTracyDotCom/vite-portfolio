@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <>
-       <header>
+      <header>
         <div className={`text flex flex-col justify-center w-full items-center`}>
           <Heading />
           <Plane />
@@ -17,11 +17,11 @@ export default function Home() {
 
       </header>
 
-      <div className="footer">
+      <div className="">
         <a href="#">
 
-          <h1 id="moreFun">more fun stuff
-            <i className="fa fa-arrow-right" aria-hidden="true"></i></h1>
+          <h1 id="moreFun" className="text-red-500">Portfolio
+            <i className="fa fa-arrow-right ml-5"></i></h1>
         </a>
       </div>
     </>
