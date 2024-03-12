@@ -10,7 +10,7 @@ export default function FullStack() {
       <PortfolioTile
       title="Good Measure Carpentry"
       image="/GMC.png"
-      link="https://www.goodmeasurecarpentry.com"
+      full="/GMCfull.png"
       blurb=""/>
     </div>
   )

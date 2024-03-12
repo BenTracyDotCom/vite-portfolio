@@ -17,10 +17,10 @@ export default function Heading() {
 
     <div className="button-container">
       <div className="middle">
-        <a className="btn" href="https://github.com/bentracydotcom" target="_blank">
+        <a className="butn" href="https://github.com/bentracydotcom" target="_blank">
           <i className="fab fa-github"></i>
         </a>
-        <a className="btn" href="https://www.linkedin.com/in/bentracydotcom" target="_blank">
+        <a className="butn" href="https://www.linkedin.com/in/bentracydotcom" target="_blank">
           <i className="fa-brands fa-linkedin"></i>
         </a>
       </div>

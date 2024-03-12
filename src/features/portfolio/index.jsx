@@ -3,13 +3,13 @@ import Frontend from "./Frontend";
 import FullStack from "./FullStack";
 import Backend from "./Backend";
 
-export default function PortfolioWork() {
+export default function PortfolioWork({ setPhoto }) {
 
   return(
     <div>
-      <FullStack />
-      <Frontend />
-      <Backend />
+      <FullStack setPhoto={setPhoto}/>
+      <Frontend setPhoto={setPhoto}/>
+      <Backend setPhoto={setPhoto}/>
     </div>
   )
 }
