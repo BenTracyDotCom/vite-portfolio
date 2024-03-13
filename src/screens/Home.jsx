@@ -17,12 +17,6 @@ export default function Home() {
         </div>
       </div>
       <Footer right={{ text: 'Portfolio', url: '/portfolio' }} />
-      {/* <div className="">
-          <a href="#">
-            <h1 id="moreFun" className="text-red-500">Portfolio
-              <i className="fa fa-arrow-right ml-5"></i></h1>
-          </a>
-        </div> */}
     </div>
   )
 

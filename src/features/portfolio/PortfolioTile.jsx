@@ -12,13 +12,13 @@ export default function PortfolioTile({ title, blurb, image, full, setPhoto }) {
 
   return (
     <div className="card card-compact 
-    w-fit bg-base-100 shadow-xl my-5 mx-auto md:mx-10">
+    w-fit bg-base-100 shadow-xl my-5 mx-auto md:mx-10 w-[300px]">
       <figure className="mx-0 overflow-y-hidden">
-        <img src={image} alt={`${title} image`} className="max-h-96 object-fill object-top" onClick={handleClick} />
+        <img src={image} alt={`${title} image`} className="max-h-96 aspect-auto  object-fill object-top" onClick={handleClick} />
       </figure>
       <div className="card-body text-center">
         <h2 className="card-title mt-0 mx-auto">{title}</h2>
-        <p>{blurb}</p>
+        <div className="max-w-96 md:max-w-fit mx-auto font-bold md:font-light text-center md:text-2xl">{blurb}</div>
       </div>
     </div>
   )

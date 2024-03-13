@@ -11,9 +11,10 @@ export default function FullStack({ setPhoto }) {
       title="Good Measure Carpentry"
       image="/GMC.png"
       full="/GMCfull.png"
-      blurb=""
+      blurb="I built and deployed this responsive website for a client, and I continue to provide domain management support."
       setPhoto={setPhoto}
       />
+      {/* TODO: add RC Parts Picker */}
     </div>
   )
 }
